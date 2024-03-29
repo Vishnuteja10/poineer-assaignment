@@ -1,0 +1,81 @@
+
+
+.main{
+    background-color: rgb(77, 72, 72);
+    width: 15vw;
+    height: 99vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company{
+    color: white;
+}
+
+.menu{
+    color: white;
+    font-size: 20px;
+}
+
+.searchContainer{
+    margin-top: 5vh;
+    border: 1px solid gray;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icon{
+    color: white;
+}
+
+.searchContainer input{
+    background-color: gray;
+    border: none;
+    margin-left: 3px;
+}
+
+.searchContainer input::placeholder{
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.navItem{
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+.navItem:hover span,
+.navItem:hover svg {
+    color: green;
+}
+
+.navItem span{
+    margin-left: 10px;
+    color: white;
+}
+
+.Icon{
+    color: white;
+}
+
+
+@media (max-width: 599px) {
+    .main{
+        width: 50vw;
+        padding-left: 3vw;
+    }
+
+    .searchContainer input::placeholder{
+        margin-left: 10px;
+        color: white;
+        font-size: 12px;
+    }
+}

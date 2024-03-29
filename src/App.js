@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Style from "./App.module.css";
+import SideNavBar from "./components/SideNavbar/SideNavBar";
+import Home from "./components/Home/Home";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const [displayMenu, setDisplayMenu] = useState(true);
+  const sideNav = {
+    position: "absolute",
+    "z-index": "99",
+  };
+  const isMobile = useMediaQuery({
+    query: "(max-width: 600px)",
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={Style.main}>
+      <div style={isMobile ? sideNav : {}}>
+        <SideNavBar setDisplayMenu={setDisplayMenu} displayMenu={displayMenu} />
+      </div>
+      <div>
+        <Home setDisplayMenu={setDisplayMenu} displayMenu={displayMenu} />
+      </div>
     </div>
   );
 }

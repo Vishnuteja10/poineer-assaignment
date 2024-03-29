@@ -1,0 +1,73 @@
+
+.main{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(51, 49, 49);
+    width: 82vw;
+}
+
+.menu{
+   padding-top: 1vh;
+   color: white;
+   cursor: pointer;
+}
+
+
+
+.header{
+    padding-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h4{
+    font-size: 25px;
+    color: white;
+}
+
+.header p{
+    margin-top: -3vh;
+    color: white;
+    font-size: 18px;
+}
+
+.header span{
+    color:rgb(61, 243, 45)
+}
+
+.header button{
+    margin-top: 3vh;
+    padding: 6px;
+    background-color: rgb(19, 160, 6);
+    border-radius: 5px;
+    margin-right: 2vw;
+    color: rgb(224, 218, 218);
+    border: none;
+    cursor: pointer;
+}
+
+.chart{
+    padding-bottom: 1vh;
+}
+
+.currency{
+    margin-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+@media (max-width: 599px) {
+    .header h4{
+        font-size: 18px;
+    }
+    .header p{
+        margin-top: -2vh;
+        font-size: 15px;
+    }
+    .content{
+        width: 90vw;
+    }
+    .header button{
+        font-size: 12px;
+        width: 20vw;
+    }
+}

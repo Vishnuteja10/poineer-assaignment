@@ -1,0 +1,42 @@
+
+.currencyCard{
+    margin-left: 3vw;
+    width: 20vw;
+    height: 10vw;
+    background-color: rgb(75, 71, 71);
+    border-radius: 5px;
+}
+
+.main h4{
+    color: white;
+    margin-left: 3vw;
+}
+
+.currencyContainer{
+    display: flex;
+    align-items: center
+}
+
+.header{
+    padding: 5px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.details{
+    padding-left: 1vw;
+    color: white;
+}
+
+@media (max-width: 599px) {
+    .main{
+        width: 75vw;
+        margin-top: 2vh;
+    }
+
+    .currencyCard{
+        width: 60vw;
+        height: 30vh;
+        margin-top: 2vh;
+    }
+}
